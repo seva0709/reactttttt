@@ -1,0 +1,60 @@
+.header{
+    background-color: dodgerblue;
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    
+}
+
+.header__box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: #fff;
+
+    @media (max-width: 900px) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1{
+        color: #fff;
+
+        span {
+            font-size: 52px;
+        }
+    }
+
+    p{
+        max-width: 300px;
+    }
+
+    button{
+        max-width: 250px;
+        background-color: gold;
+        padding: 12px;
+        border: none;
+        font-weight: 600;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(207, 156, 27); 
+        }
+    }
+}
+
+.header__img{
+    max-width: 500px;
+    width: 100%;
+}
